@@ -14,7 +14,7 @@ const center = {
 function Map() {
     const { isLoaded } = useJsApiLoader({
         id: "google-map-script",
-        googleMapsApiKey: "AIzaSyBTTLx9iWxR9QJDs3sJhkpaS6lmTEl9zHk",
+        googleMapsApiKey: `${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`,
     });
 
     const [map, setMap] = React.useState(null);
@@ -46,3 +46,5 @@ function Map() {
 }
 
 export default React.memo(Map);
+
+// https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places
