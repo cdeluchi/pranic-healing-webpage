@@ -31,8 +31,12 @@ function Main() {
                             This is <span>Pranic Healing</span>
                         </h2>
                         <p>
-                            This is our website about PranicHealing, and here
-                            you will know all about this amazing technic.
+                            Pranic Healing is a healing modality that works with
+                            energy or life force to improve a wide range of
+                            physical and psychological ailments.
+                            <br />
+                            <br />
+                            MasterChoa Kok Sui
                         </p>
                         <a href="www.pranaworld.net">Read more</a>
                     </div>
@@ -45,31 +49,37 @@ function Main() {
                         <h2>About energy</h2>
                         <p>everything is energy</p>
                     </div>
-                    <div className="card-left">
+                    {/* <div className="card-left">
                         <p>About energy</p>
-                    </div>
+                    </div> */}
                     <div className="card-botton">
                         <p>About energy</p>
                     </div>
                     <div className="img-box">
-                        {/* <img
+                        <img
                             className="img-hand"
                             alt="Image Hand"
-                            src="/imghand.jpg"
-                        /> */}
-                        <Lottie
+                            src="/healinghand.jpg"
+                        />
+                        {/* <Lottie
                             options={defaultOptions}
                             height={500}
                             width={500}
-                        />
+                        /> */}
                     </div>
                 </div>
             </div>
             <div className="text-botton">
                 <h2>
-                    If you want to know more about our sessions, <br />
-                    please send us a message
+                    Pranic Healing is not intended to replace medicinal
+                    treatments, <br />
+                    it works together for a faster and more effective result.
                 </h2>
+                <img
+                    className="arrow-down"
+                    alt="arrow-down"
+                    src="/arrow-down.png"
+                />
             </div>
         </div>
     );
