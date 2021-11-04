@@ -1,20 +1,20 @@
 import React from "react";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
     width: "400px",
     height: "400px",
-};
-
-const center = {
-    lat: 52.49015,
-    lng: 13.42634,
+    margin: "40px",
 };
 
 function Map() {
+    const center = {
+        lat: 52.48,
+        lng: 13.42,
+    };
     const { isLoaded } = useJsApiLoader({
         id: "google-map-script",
-        googleMapsApiKey: `${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`,
+        googleMapsApiKey: "REACT_APP_GOOGLE_MAPS_API_KEY",
     });
 
     const [map, setMap] = React.useState(null);
@@ -30,16 +30,34 @@ function Map() {
     }, []);
 
     return isLoaded ? (
-        <GoogleMap
-            mapContainerStyle={containerStyle}
-            center={center}
-            zoom={10}
-            onLoad={onLoad}
-            onUnmount={onUnmount}
-        >
-            {/* Child components, such as markers, info windows, etc. */}
-            <></>
-        </GoogleMap>
+        <div className="maps">
+            <GoogleMap
+                mapContainerStyle={containerStyle}
+                center={center}
+                zoom={11}
+                onLoad={onLoad}
+                onUnmount={onUnmount}
+            >
+                {/* Child components, such as markers, info windows, etc. */}
+                <>
+                    <Marker
+                        className="marker"
+                        latitude={52.48}
+                        longitude={13.48}
+                        offsetLeft={-20}
+                        offsetTop={-10}
+                    >
+                        <div>
+                            <img
+                                className="pinImg"
+                                src={"/pin.png"}
+                                alt="Logo"
+                            />
+                        </div>
+                    </Marker>
+                </>
+            </GoogleMap>
+        </div>
     ) : (
         <></>
     );
@@ -48,3 +66,5 @@ function Map() {
 export default React.memo(Map);
 
 // https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places
+// Refugio Café/Coordinates
+// 52.4899° N, 13.4252° E

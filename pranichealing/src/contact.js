@@ -5,10 +5,21 @@ function Contact() {
                 <h2>Contact us</h2>
                 <form>
                     <div className="item-form">
-                        <input placeholder="first name" type="text" />
-                        <input placeholder="last name" type="text" />
-                        <input placeholder="email" type="text" />
-                        <input placeholder="password" type="text" />
+                        <input
+                            className="data-input"
+                            placeholder="full name"
+                            type="text"
+                        />
+                        <input
+                            className="data-input"
+                            placeholder="email"
+                            type="text"
+                        />
+                        <input
+                            className="message-input"
+                            placeholder="your message"
+                            type="text"
+                        />
                         <input type="submit" />
                     </div>
                 </form>
