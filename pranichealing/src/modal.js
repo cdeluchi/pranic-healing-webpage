@@ -21,7 +21,7 @@ export default function Modal() {
                 <div className="modal">
                     <div onClick={toggleModal} className="overlay"></div>
                     <div className="modal-content">
-                        <h2>Next Sunday Session</h2>
+                        <h2>Next Sunday Session 1</h2>
                         <p>
                             This is the information for the next sesion on
                             Sunday

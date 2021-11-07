@@ -15,11 +15,14 @@ function Main() {
             <div className="center">
                 <div className="menu">
                     <div className="logo">
-                        <h3>Pranic Healing Berlin</h3>
+                        <h3>
+                            Pranic Healing <br />
+                            Berlin
+                        </h3>
                     </div>
                     <div className="item-menu">
                         <a href="#">Home</a>
-                        <a href="#">Location</a>
+                        <a href="#">About</a>
                         <a href="#">Contact</a>
                     </div>
                 </div>
@@ -57,7 +60,7 @@ function Main() {
                     </div>
                     <div className="img-box">
                         <img
-                            className="img-hand"
+                            // className="img-hand"
                             alt="Image Hand"
                             src="/healinghand.jpg"
                         />

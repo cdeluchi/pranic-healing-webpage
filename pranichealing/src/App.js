@@ -5,6 +5,7 @@ import Modal from "./modal";
 import Map from "./map";
 import Contact from "./contact";
 import Testimonial from "./testimonial";
+import Footer from "./footer";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             </div>
             <Testimonial />
             <Contact />
+            <Footer />
         </>
     );
 }
