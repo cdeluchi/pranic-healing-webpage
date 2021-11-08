@@ -238,10 +238,10 @@ class Map extends React.Component {
 
                     {/*Marker */}
                     <Marker
-                        google={this.props.google}
-                        name={"Refugio Berlin"}
-                        draggable={true}
-                        onDragEnd={this.onMarkerDragEnd}
+                        // google={this.props.google}
+                        // name={"Refugio Berlin"}
+                        // draggable={true}
+                        // onDragEnd={this.onMarkerDragEnd}
                         position={{
                             lat: this.state.markerPosition.lat,
                             lng: this.state.markerPosition.lng,
@@ -255,9 +255,7 @@ class Map extends React.Component {
                         }}
                     >
                         <div>
-                            <span style={{ padding: 0, margin: 0 }}>
-                                {this.state.address}
-                            </span>
+                            <span>{this.state.address}</span>
                         </div>
                     </InfoWindow>
                     <Marker />
@@ -288,8 +286,8 @@ class Map extends React.Component {
 
         return (
             <div
+                className="map-container"
                 style={{
-                    margin: "80px",
                     width: 400,
                     height: 400,
                     maxWidth: 1000,

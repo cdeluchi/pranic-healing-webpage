@@ -41,7 +41,7 @@ color II
     height: 340px;
     padding: 10px;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     backdrop-filter: blur(10px);
@@ -50,7 +50,7 @@ color II
     border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 .main-content .text-box h2 {
-    color: #2b93bf;
+    color: #244d4d;
     font-size: 2em;
     line-height: 1.4em;
     font-weight: 500;
@@ -63,16 +63,16 @@ color II
     margin: 10px;
 }
 .main-content .text-box p {
-    color: #2b93bf;
+    color: #244d4d;
     margin: 10px;
 }
 .main-content .text-box a {
     display: inline-block;
-    margin-top: 20px;
+    margin: 10px;
     padding: 8px 20px;
     background: aliceblue;
-    color: #2b93bf;
-    border-radius: 40px;
+    color: #244d4d;
+    border-radius: 10px;
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
@@ -94,7 +94,7 @@ color II
     position: relative;
     top: 30px;
     right: 100px;
-    left: 320px;
+    left: 280px;
 }
 .text-botton {
     top: 19px;
@@ -112,12 +112,12 @@ color II
     font-size: 20px;
     border-radius: 5px;
     padding: 10px;
-    margin: 41px;
+    margin: 30px;
 }
 .menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -128,9 +128,10 @@ color II
     border-radius: 8px;
     padding: 3px 8px;
     margin: 5px;
+    font-size: 23px;
 }
 .logo {
-    font-size: 20px;
+    font-size: 30px;
     color: aliceblue;
 }
 .form {
@@ -140,6 +141,9 @@ color II
     margin: 40px auto;
     flex-direction: column;
     align-items: center;
+}
+.item-menu {
+    display: flex;
 }
 .item-form {
     display: flex;
@@ -160,22 +164,31 @@ color II
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: aliceblue;
+    color: #244d4d;
 }
 .item-form input[type="submit"] {
-    width: 100%;
-    height: 30px;
-    margin: 5px 0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: aliceblue;
+    color: #244d4d;
 }
 
 .form .form-control {
     display: flex;
     align-items: center;
     height: 100px;
-    margin: 8px 0;
+    margin: 30px 0;
     padding: 10px;
 }
 .form h2 {
-    color: #2b93bf;
+    color: #244d4d;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: normal;
@@ -220,34 +233,50 @@ color II
     text-align: center;
 } */
 .card-botton {
-    top: 276px;
-    right: 110px;
+    top: -5px;
+    right: 70px;
     border-radius: 10px;
     background-color: aliceblue;
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 130px;
-    height: 50px;
+    width: 150px;
+    height: 60px;
     padding: 10px;
     text-align: center;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 .card-botton p {
-    font-size: 10px;
+    font-size: 15px;
+    color: #244d4d;
 }
 
 .arrow-down {
     margin: 10px;
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 40px;
     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg)
         brightness(95%) contrast(80%);
+    transition: 0.2s;
+    animation: ease-in;
+}
+
+.arrow-down:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 0px;
 }
 
 /* CONTENT CSS */
 .content {
     background-color: aliceblue;
     display: flex;
+    color: #244d4d;
     justify-content: center;
     align-items: center;
     padding: 40px 0;
@@ -260,7 +289,7 @@ color II
 }
 
 .modal-map-container {
-    background-color: #dcb8cb;
+    background-color: #55b9b9;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -269,6 +298,9 @@ color II
     /* width: 100%;
     height: 100%; */
     /* min-height: 400px; */
+}
+.map-container {
+    margin: 80px 80px 80px 30px;
 }
 
 .gm-style .gm-style-iw-t::after {
@@ -292,6 +324,7 @@ color II
 /* MODAL STYLE */
 .modal-container {
     position: relative;
+    width: 400px;
     display: flex;
     flex-direction: column;
 }
@@ -301,7 +334,7 @@ color II
     border-radius: 5px;
     border: 2px solid #ccc;
     background-color: aliceblue;
-    color: #dcb8cb;
+    color: #244d4d;
 }
 body.active-modal {
     overflow-y: hidden;
@@ -359,12 +392,10 @@ body.active-modal {
 .card-container {
     display: flex;
     flex-direction: column;
-    /* background-color: #dcb8cb; */
     width: 200px;
     padding: 20px;
     margin: 30px;
     overflow: hidden;
-    /* box-shadow: 0 0 15px -5px; */
     transition: 0.2s;
     animation: ease-in;
     background: rgba(255, 255, 255, 0.2);
@@ -384,13 +415,12 @@ body.active-modal {
     width: 70%;
 }
 .footer {
-    top: 234px;
-    right: 110px;
-    left: 284px;
     display: flex;
     position: relative;
     justify-content: center;
     left: 0;
+    margin: 10px;
+    padding: 10px;
     bottom: 0;
     right: 0;
     border-left: 0;

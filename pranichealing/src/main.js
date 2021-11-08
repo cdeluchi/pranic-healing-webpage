@@ -1,4 +1,4 @@
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 import animationData from "./lotties/meditation.json";
 
 function Main() {
@@ -34,16 +34,16 @@ function Main() {
                             This is <span>Pranic Healing</span>
                         </h2>
                         <p>
-                            Pranic Healing is a healing modality that works with
-                            energy or life force to improve a wide range of
-                            physical and psychological ailments.
+                            A healing modality that works with energy or life
+                            force to improve a wide range of physical and
+                            psychological ailments.
                             <br />
                             <br />
                             MasterChoa Kok Sui
                         </p>
-                        <a href="www.pranaworld.net">Read more</a>
+                        <a href="contact">Book Now!</a>
                     </div>
-                    <div className="card-right">
+                    {/* <div className="card-right">
                         <Lottie
                             options={defaultOptions}
                             height={100}
@@ -63,7 +63,7 @@ function Main() {
                             // className="img-hand"
                             alt="Image Hand"
                             src="/healinghand.jpg"
-                        />
+                        />{" "}
                         {/* <Lottie
                             options={defaultOptions}
                             height={500}
