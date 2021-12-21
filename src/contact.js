@@ -25,8 +25,8 @@ export default function Contact() {
         e.target.reset();
     }
     return (
-        <div>
-            <div className="center">
+      
+            <div className="center-contact">
                 <div className="form">
                     <h2>Book your session</h2>
                     <form onSubmit={sendEmail}>
@@ -64,6 +64,6 @@ export default function Contact() {
                     </form>
                 </div>
             </div>
-        </div>
+        
     );
 }

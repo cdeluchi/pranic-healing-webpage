@@ -86,7 +86,7 @@ class Map extends React.Component {
             <div
                 className="map-container"
                 style={{
-                    width: 400,
+                    width: 600,
                     height: 400,
                     maxWidth: 1000,
                 }}

@@ -7,7 +7,7 @@ function Testimonial() {
                 </div>
                 <div className="card-content">
                     <div className="card-tittle">
-                        <h3>First card</h3>
+                        <h3>Lian McGrown</h3>
                     </div>
                     <div className="card-body">
                         <p>
@@ -23,7 +23,7 @@ function Testimonial() {
                 </div>
                 <div className="card-content">
                     <div className="card-tittle">
-                        <h3>First card</h3>
+                        <h3>Sara Donner</h3>
                     </div>
                     <div className="card-body">
                         <p>
@@ -39,7 +39,7 @@ function Testimonial() {
                 </div>
                 <div className="card-content">
                     <div className="card-tittle">
-                        <h3>First card</h3>
+                        <h3>Christian Mass</h3>
                     </div>
                     <div className="card-body">
                         <p>
