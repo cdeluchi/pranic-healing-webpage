@@ -16,15 +16,10 @@ function Main() {
                 <div className="menu">
                     <div className="logo">
                         <h3>
-                            Pranic Healing <br />
-                            Berlin
+                            PRANIC HEALING | BERLIN <br />
                         </h3>
                     </div>
-                    <div className="item-menu">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
-                    </div>
+                    
                 </div>
                 <div className="main-content">
                     <div className="text-box">
@@ -34,11 +29,11 @@ function Main() {
                             This is <span>Pranic Healing</span>
                         </h2>
                         <p>
-                            A healing modality that works with energy or life
+                            "A healing modality that works with energy or life
                             force to improve a wide range of physical and
-                            psychological ailments.
+                            psychological ailments"
                             <br />
-                            <br />
+                           
                             MasterChoa Kok Sui
                         </p>
                         <a href="contact">Book Now!</a>
