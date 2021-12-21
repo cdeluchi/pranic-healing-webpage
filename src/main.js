@@ -43,20 +43,9 @@ function Main() {
                         </p>
                         <a href="contact">Book Now!</a>
                     </div>
-                    {/* <div className="card-right">
-                        <Lottie
-                            options={defaultOptions}
-                            height={100}
-                            width={100}
-                        />
-                        <h2>About energy</h2>
-                        <p>everything is energy</p>
-                    </div>
-                    {/* <div className="card-left">
-                        <p>About energy</p>
-                    </div> */}
+                  
                     <div className="card-botton">
-                        <p>About energy</p>
+                        
                     </div>
                     <div className="img-box">
                         <img
@@ -64,19 +53,15 @@ function Main() {
                             alt="Image Hand"
                             src="/healinghand.jpg"
                         />{" "}
-                        {/* <Lottie
-                            options={defaultOptions}
-                            height={500}
-                            width={500}
-                        /> */}
+                        
                     </div>
                 </div>
             </div>
             <div className="text-botton">
                 <h2>
-                    Pranic Healing is not intended to replace medicinal
+                    Pranic Healing is not intended to replace the medicinal
                     treatments, <br />
-                    it works together for a faster and more effective result.
+                    it works together for a faster and more effective results.
                 </h2>
                 <img
                     className="arrow-down"

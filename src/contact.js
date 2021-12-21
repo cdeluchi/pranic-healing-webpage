@@ -28,7 +28,7 @@ export default function Contact() {
         <div>
             <div className="center">
                 <div className="form">
-                    <h2>Contact Us</h2>
+                    <h2>Book your session</h2>
                     <form onSubmit={sendEmail}>
                         <div className="item-form">
                             <div className="data-input">
